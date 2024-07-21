@@ -1,0 +1,5 @@
+git:
+  api:
+    urlForGetUserRepos: https://api.github.com/users/{username}/repos
+    urlForGetUserReposBranches: https://api.github.com/repos/{username}/{repo}/branches
+    header: application/json

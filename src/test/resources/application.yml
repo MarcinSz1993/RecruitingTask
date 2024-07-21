@@ -1,0 +1,5 @@
+git:
+  api:
+    urlForGetUserRepos: http://localhost:8181/users/{username}/repos
+    urlForGetUserReposBranches: http://localhost:8181/repos/{username}/{repo}/branches
+    header: application/json
