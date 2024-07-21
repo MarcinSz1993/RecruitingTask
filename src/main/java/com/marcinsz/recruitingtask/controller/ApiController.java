@@ -18,7 +18,7 @@ public class ApiController {
 
     @GetMapping("/result")
     public List<RequiredResponse> requiredResponses(@RequestParam String username) {
-        return apiService.requiredResponse(username);
+        return apiService.getRequiredResponse(username);
     }
 
 }

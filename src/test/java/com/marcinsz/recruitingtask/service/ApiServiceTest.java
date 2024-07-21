@@ -33,7 +33,7 @@ public class ApiServiceTest {
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     @Test
-    public void shouldSuccessfullyGetRequiredResponse() throws JsonProcessingException {
+    public void shouldSuccessfullyGetGetRequiredResponse() throws JsonProcessingException {
         Owner owner = getOwner();
         List<UserRepoFromApi> userRepoList = createUserRepos(owner);
 
@@ -72,7 +72,7 @@ public class ApiServiceTest {
                 .build();
 
         List<RequiredResponse> expectedResponses = List.of(expectedResponse);
-        List<RequiredResponse> actualResponses = apiService.requiredResponse("MarcinSz1993");
+        List<RequiredResponse> actualResponses = apiService.getRequiredResponse("MarcinSz1993");
 
         assertThat(actualResponses).isNotNull();
         assertThat(actualResponses).isEqualTo(expectedResponses);

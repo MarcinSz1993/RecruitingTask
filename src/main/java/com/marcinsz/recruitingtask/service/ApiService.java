@@ -23,7 +23,7 @@ public class ApiService {
     private final WebClient webClient;
     private final ApiConfig apiConfig;
 
-    public List<RequiredResponse> requiredResponse(String username) {
+    public List<RequiredResponse> getRequiredResponse(String username) {
         List<UserRepoFromApi> userRepos = getUserRepos(username);
         List<UserRepoFromApi> nonForkedRepos = userRepos.stream()
                 .filter(repo -> !repo.isFork())

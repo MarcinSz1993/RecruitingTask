@@ -30,7 +30,7 @@ Aplikacja służy do pobierania listy repozytoriów użytkownika GitHub, które 
     ```bash
     docker run -p 8080:8080 marcinsz1993/recruiting_task
     ```
-2. Otwórz przeglądarkę i przejdź do `http://localhost:8080/api/repos/{username}` aby uzyskać listę repozytoriów użytkownika GitHub.
+2. Otwórz przeglądarkę i przejdź do `http://localhost:8080/git/result?username=tuWstawUsername` aby uzyskać listę repozytoriów użytkownika GitHub.
 
 ### Przykład odpowiedzi
 
