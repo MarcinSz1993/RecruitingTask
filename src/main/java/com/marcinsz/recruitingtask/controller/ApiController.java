@@ -20,5 +20,4 @@ public class ApiController {
     public List<RequiredResponse> requiredResponses(@RequestParam String username) {
         return apiService.getRequiredResponse(username);
     }
-
 }

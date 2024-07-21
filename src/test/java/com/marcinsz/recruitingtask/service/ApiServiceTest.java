@@ -33,7 +33,7 @@ public class ApiServiceTest {
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     @Test
-    public void shouldSuccessfullyGetGetRequiredResponse() throws JsonProcessingException {
+    public void shouldSuccessfullyGetRequiredResponse() throws JsonProcessingException {
         Owner owner = getOwner();
         List<UserRepoFromApi> userRepoList = createUserRepos(owner);
 
@@ -77,7 +77,6 @@ public class ApiServiceTest {
         assertThat(actualResponses).isNotNull();
         assertThat(actualResponses).isEqualTo(expectedResponses);
     }
-
 
     @Test
     public void shouldSuccessfullyGetUserRepos() throws Exception {

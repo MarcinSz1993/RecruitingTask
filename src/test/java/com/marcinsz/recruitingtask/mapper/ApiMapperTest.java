@@ -80,5 +80,4 @@ class ApiMapperTest {
         assertEquals(expectedListOfBranches.size(), actualListOfBranch.size());
         assertEquals(expectedListOfBranches.getFirst().getName(), actualListOfBranch.getFirst().getName());
     }
-
 }
